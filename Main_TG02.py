@@ -33,7 +33,8 @@ async def react_photo(message: Message):
     rand_answ = random.choice(responses)
     await message.answer(rand_answ)
     # Сохраняем фото на сервере
-    await message.photo[-1].download(destination=f'img/{message.photo[-1].file_id}.jpg')
+    # await message.photo[-1].download(destination=f'img/{message.photo[-1].file_id}.jpg')
+    await bot.download(message.photo[-1], destination=f'img/{message.photo[-1].file_id}.jpg')
 
 # Обработчик команды /translate
 @dp.message(Command("tr"))
