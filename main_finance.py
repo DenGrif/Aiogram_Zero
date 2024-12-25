@@ -2,8 +2,8 @@ import asyncio
 import random
 
 from aiogram import Bot, Dispatcher, F
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
 from aiogram. filters import CommandStart, Command
 from aiogram. types import Message, FSInputFile
 from aiogram. fsm. context import FSMContext
